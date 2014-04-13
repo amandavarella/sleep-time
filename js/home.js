@@ -5,7 +5,7 @@ function pad(num, size) {
 }
 
 function calculaHoraDormir(){
-	var inputTime=document.querySelector('#time').value;
+	var inputTime=document.querySelector('#timeAcordar').value;
 	var timeAnswers="";
 	var horasDormir = new Array();
 
@@ -29,7 +29,6 @@ function calculaHoraDormir(){
 			hourCycle1=hourCycle1 + 24;
 
 		
-		
 		var nextCycle = pad(hourCycle1,2) + ":" + pad(minutesCycle1,2);
 			
 		
@@ -49,7 +48,7 @@ function calculaHoraDormir(){
 }
 
 function calculaHoraAcordar(){
-	var inputTime=document.querySelector('#time').value;
+	var inputTime=document.querySelector('#timeDormir').value;
 	var timeAnswers="";
 
 
@@ -82,7 +81,7 @@ function calculaHoraAcordar(){
 	return false;
 }
 
-document.querySelector('#btnAcordar').onclick=calculaHoraAcordar;
-document.querySelector('#btnDormir').onclick=calculaHoraDormir;
+document.querySelector('#btnCalculaAcordar').onclick=calculaHoraAcordar;
+document.querySelector('#btnCalculaDormir').onclick=calculaHoraDormir;
 
 

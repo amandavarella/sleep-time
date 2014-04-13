@@ -1,4 +1,9 @@
-
+input[type="time"]{
+	border-radius: 4px;
+	text-align: left;
+	border: 1px solid;
+	border-color: #DFDFCF;
+}
 
 
 

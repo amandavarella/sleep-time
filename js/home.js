@@ -74,8 +74,11 @@ function calculaHoraAcordar(){
 			timeAnswers = timeAnswers + nextCycle + ",";
 		inputTime = nextCycle;
 
+		alert(inputTime);
+
 	}
 	document.querySelector('#label').innerHTML = timeAnswers.replace(/,$/, "");
+
 
 
 	return false;
